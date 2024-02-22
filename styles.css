@@ -1,0 +1,75 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.astrology-app {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.astrology-app h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+input[type="date"], button {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+button {
+    background-color: #5D55FA;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4D3DF7;
+}
+
+#message {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #eff0f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .astrology-app {
+        margin: 20px;
+    }
+
+    input[type="date"], button {
+        font-size: 14px;
+    }
+}
